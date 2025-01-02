@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background-color: rgb(233, 232, 160); /* Default black background for the entire page */
+    font-family: Calibri, s
+  /* Ensure body covers the full viewport */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 147, 41);
+    padding: 10px 20px; /* Adds padding for a cleaner look */
+    height: 80px;
+}
+
+.logo img {
+    height: 85px; /* Initial height */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+.logo img:hover {
+    transform: scale(1.25); /* Grows the image by 10% */
+}
+
+.ulnav {
+        list-style: none; /* Removes bullet points */
+        padding: 0; /* Removes default padding */
+        margin: 0; /* Removes default margin */
+        display: flex; /* Aligns items in a row */
+        gap: 20px; /* Adds space between items (optional) */
+        color: rgb(255, 255, 255);
+        margin: right 25%; 
+        
+}
+.ulnav a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent (.ulnav) */
+    font-size: 20px; /* Adjust text size as needed */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color changes */
+}
+
+.ulnav a:hover {
+    transform: scale(1.1); /* Grows the link by 10% */
+    color: rgb(243, 181, 181); /* Optional: Changes color on hover */
+}
+
+.buttonnav {
+    display: flex; /* Align buttons in a row */
+    gap: 15px; /* Adds space between buttons */
+    justify-content: center; /* Centers buttons horizontally */
+    
+}
+
+.btn {
+    display: inline-block; /* Makes the buttons behave like a block for styling */
+    padding: 15px 20px; /* Controls the size of the button */
+    font-size: 18px; /* Sets larger text size */
+    font-weight: bold; /* Makes the text stand out */
+    text-decoration: none; /* Removes underline */
+    color: white; /* Button text color */
+    background-color: #011427; /* Button background color (blue in this case) */
+    border: none; /* Removes any default border */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 4px 6px rgba(233, 76, 76, 0.1); /* Adds a subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Centers the text inside the button */
+}
+
+.btn:hover {
+    background-color: #ff0404; /* Changes background color on hover */
+    transform: translateY(-3px); /* Creates a lifting effect */
+    box-shadow: 0 6px 8px rgba(209, 154, 133, 0.4); /* Enhances the shadow on hover */
+}
+
+.btn:active {
+    transform: translateY(0); /* Resets lift effect on click */
+    box-shadow: 0 3px 4px rgba(255, 0, 0, 0.1); /* Subtle pressed effect */
+}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Adjust height for stacking */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .ulnav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Adjust spacing between links */
+        align-items: center; /* Center links horizontally */
+    }
+
+    .buttonnav {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Adjust spacing between buttons */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons take full width */
+    }
+}
+
+
+
+
+
+    
